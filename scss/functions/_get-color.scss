@@ -21,10 +21,14 @@
     } @else {
       // Warn if $level is not valid
       @warn "Invalid color level: `#{$level}` for type `#{$type}`.";
+      // Return null
+      @return null;
     }
   } @else {
     // Warn if $type is not valid
     @warn "Invalid color type: `#{$type}`.";
+    // Return null
+    @return null;
   }
 
   // Return null if $type or $level is invalid
